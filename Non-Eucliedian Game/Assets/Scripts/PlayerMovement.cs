@@ -8,19 +8,20 @@ public class PlayerMovement : MonoBehaviour
     
     [Range(0f, 35f)]
     public float speed = 12f;
-    void Start()
-    {
-        
-    }
+    public float gravity = -9.81f;
 
-    // Update is called once per frame
+    Vector3 velocity; 
     void Update()
     {
+        //Moves the player
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-
-        Vector3 move = transform.right * x + transform.forward * z;
-
+        Vector3 move = transform.right * x + transform.forward * z; 
         controller.Move(move * speed * Time.deltaTime);
+
+        //Implements gravity
+        velocity.y += gravity * Time.deltaTime; 
+        controller.Move(velocity * Time.deltaTime);
+        
     }
 }

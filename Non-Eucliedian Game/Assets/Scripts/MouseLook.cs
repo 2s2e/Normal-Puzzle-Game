@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
-    [Range(0f, 200f)]
+    [Range(0f, 500f)]
     public float MouseSenstivity = 100f;
     public Transform playerBody;
 
     float xRotation = 0f;
+
 
     void Start()
     {

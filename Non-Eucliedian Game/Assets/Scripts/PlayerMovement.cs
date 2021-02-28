@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     
     [Range(0f, 35f)]
-    public float speed = 12f;
+    public float speed = 8f;
     public float gravity = -9.81f;
     public float jumpHeight = 2f;
 
@@ -17,10 +17,19 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     bool isGrounded;
     public Transform groundCheck;
+    public bool isRunning;
     void Update()
     {
         
-        
+          if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 15f;
+            isRunning = true;
+        } else {
+            speed = 8f;
+            isRunning = false;
+
+        }
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z; 

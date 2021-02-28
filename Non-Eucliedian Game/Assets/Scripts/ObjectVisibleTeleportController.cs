@@ -24,7 +24,7 @@ public class ObjectVisibleTeleportController : MonoBehaviour
     {
         Gizmos.color = gizmoColor;
         Gizmos.DrawCube(transform.position, new Vector3(0.5f, 0.5f, 0.5f));
-        Gizmos.DrawCube(transform.position + offset, new Vector3(0.5f, 0.5f, 0.5f));
+        Gizmos.DrawSphere(transform.position + offset, 0.5f);
 
     }
 

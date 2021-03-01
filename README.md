@@ -7,6 +7,10 @@ Find and grab the crystals in the various levels and put them in their respectiv
 
 It's up to you to figure out how to traverse this strange terrain however..., normal rules of logic may not apply
 
+For a full walkthrough, check out the following video: https://www.youtube.com/watch?v=Oa3NjRsigv0&feature=youtu.be&ab_channel=lutherwu
+
+Keep in mind that this was made by a bunch of amateurs under a limited time frame, so there may be bugs.
+
 Have fun!
 
 To play the game, download the "Normal Puzzle Game" folder and run the executable.

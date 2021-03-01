@@ -72,6 +72,10 @@ public class PlayerMovement : MonoBehaviour
             controller.enabled = false;
             transform.position = new Vector3(27,5,-19);
             controller.enabled = true;
+
+            GlobalVariables.blueGemHas = false;
+            GlobalVariables.greenGemHas = false;
+            GlobalVariables.yellowGemHas = false;
         }
         velocity.y += gravity * Time.deltaTime; 
         controller.Move(velocity * Time.deltaTime);

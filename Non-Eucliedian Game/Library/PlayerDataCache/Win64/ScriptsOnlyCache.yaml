@@ -20,9 +20,6 @@ ScriptsOnlyBuild:
     - PortalTextureSetup
     - Rotate
     - TeleportController
-    Unity.ProBuilder.Editor.dll:
-    - UnityEditor.ProBuilder.EditorToolbar
-    - UnityEditor.ProBuilder.ProBuilderEditor
     Unity.ProBuilder.dll:
     - UnityEngine.ProBuilder.PolyShape
     - UnityEngine.ProBuilder.ProBuilderMesh
@@ -79,25 +76,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11610}
+      Script: {instanceID: 11612}
     - Class: 114
-      Script: {instanceID: 11708}
+      Script: {instanceID: 11710}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 12018}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 13450}
+      Script: {instanceID: 13454}
     - Class: 114
-      Script: {instanceID: 13980}
+      Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 272964}
+      Script: {instanceID: 13988}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,65 +147,65 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11372}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11398}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 11530}
+      Script: {instanceID: 11532}
     - Class: 114
-      Script: {instanceID: 11664}
+      Script: {instanceID: 11666}
     - Class: 114
-      Script: {instanceID: 11708}
+      Script: {instanceID: 11710}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 12018}
     - Class: 114
-      Script: {instanceID: 12150}
+      Script: {instanceID: 12152}
     - Class: 114
       Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12338}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12608}
+      Script: {instanceID: 12342}
     - Class: 114
-      Script: {instanceID: 12644}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12784}
+      Script: {instanceID: 12648}
     - Class: 114
-      Script: {instanceID: 12848}
+      Script: {instanceID: 12788}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 12852}
     - Class: 114
-      Script: {instanceID: 13080}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 13084}
     - Class: 114
-      Script: {instanceID: 13192}
+      Script: {instanceID: 13104}
     - Class: 114
-      Script: {instanceID: 13362}
+      Script: {instanceID: 13196}
     - Class: 114
-      Script: {instanceID: 13450}
+      Script: {instanceID: 13366}
     - Class: 114
-      Script: {instanceID: 13470}
+      Script: {instanceID: 13454}
     - Class: 114
-      Script: {instanceID: 13692}
+      Script: {instanceID: 13474}
     - Class: 114
-      Script: {instanceID: 13846}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 13912}
+      Script: {instanceID: 13850}
     - Class: 114
-      Script: {instanceID: 13974}
+      Script: {instanceID: 13916}
+    - Class: 114
+      Script: {instanceID: 13944}
     - Class: 114
       Script: {instanceID: 13980}
     - Class: 114
-      Script: {instanceID: 13982}
+      Script: {instanceID: 13984}
     - Class: 114
-      Script: {instanceID: 249472}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 272964}
-    - Class: 114
-      Script: {instanceID: 337290}
+      Script: {instanceID: 13990}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -216,6 +213,8 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -480,6 +479,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: WarpTextExample
+  - hash:
+      serializedVersion: 2
+      Hash: 896050b5a982334e21a78b3f45c2c628
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AlternateTeleporter
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -974,6 +979,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 3be2fdb7eea36a4be6eba1438ad2e1ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
@@ -996,6 +1007,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PortalTeleporter
+  - hash:
+      serializedVersion: 2
+      Hash: 66d4d5517052f5fd9a2e584294df8b55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameWinner
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -1038,24 +1055,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AlternateTeleporter
-  - hash:
-      serializedVersion: 2
-      Hash: 3be2fdb7eea36a4be6eba1438ad2e1ca
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
-  - hash:
-      serializedVersion: 2
-      Hash: 66d4d5517052f5fd9a2e584294df8b55
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameWinner
   platform: 19
   scenePathNames:
   - Assets/Scenes/MasterLevel.unity

@@ -52,10 +52,22 @@ MonoBehaviour:
     loop: 0
   - name: BGM
     clip: {fileID: 8300000, guid: e16d6f01ec6514244b114b70b29c346e, type: 3}
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: PlayerRun
+    clip: {fileID: 8300000, guid: 05f7cde9d41d99d4c9905e757b328377, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: WinBGM
+    clip: {fileID: 8300000, guid: 4c3fff0d716c52f4cb5b1659a4dd1000, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
 --- !u!1 &4263259727937368344
 GameObject:
   m_ObjectHideFlags: 0

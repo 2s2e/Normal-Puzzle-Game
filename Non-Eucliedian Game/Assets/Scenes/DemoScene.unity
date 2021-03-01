@@ -1536,6 +1536,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c3fff0d716c52f4cb5b1659a4dd1000, type: 3}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c3fff0d716c52f4cb5b1659a4dd1000, type: 3}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[3].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: WinBGM
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[3].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185860853301613159, guid: aa99b667d76c2fd4c8b7be6b528ed444,
+        type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa99b667d76c2fd4c8b7be6b528ed444, type: 3}
 --- !u!1001 &1719434295

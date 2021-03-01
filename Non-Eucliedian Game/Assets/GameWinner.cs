@@ -32,6 +32,8 @@ public class GameWinner : MonoBehaviour
     void GameWin()
     {
         SceneManager.LoadScene(1);
+
+
     }
 
     void IncreaseBrightness()

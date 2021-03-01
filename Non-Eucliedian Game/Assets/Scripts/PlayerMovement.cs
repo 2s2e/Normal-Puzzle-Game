@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     
     [Range(0f, 35f)]
-    public float speed = 8f;
-    public float gravity = -9.81f;
+    public float speed = 7.5f;
+    public float gravity = -18f;
     public float jumpHeight = 2f;
 
     Vector3 velocity; 
@@ -24,29 +24,39 @@ public class PlayerMovement : MonoBehaviour
     public float footStepDelay;
     void Update()
     {
+        AudioManager manager = FindObjectOfType<AudioManager>();
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 15f;
+            speed = 12f;
             isRunning = true;
+
         } else {
-            speed = 8f;
+            speed = 7.5f;
             isRunning = false;
         }
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z; 
 
-        //If Walking, play walking audio
-        if(move.magnitude > 0) {
+        //If Walking, play walking audio 
+        if(move.magnitude > 0 && isGrounded) {
             Debug.Log("Is Walking"); 
             nextFootstep -= Time.deltaTime;
             if(nextFootstep <= 0) {
-                FindObjectOfType<AudioManager>().Play("PlayerWalk");
+                if(isRunning)
+                    manager.Play("PlayerRun");
+                else
+                    manager.Play("PlayerWalk");
                 nextFootstep += footStepDelay;
             }
         } else {
-            FindObjectOfType<AudioManager>().Stop("PlayerWalk");
+            if(isRunning)
+               manager.Stop("PlayerRun");
+            else
+               manager.Stop("PlayerWalk");
         }
+
         controller.Move(move * speed * Time.deltaTime);
         
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
